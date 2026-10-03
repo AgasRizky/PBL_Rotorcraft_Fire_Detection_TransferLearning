@@ -489,36 +489,46 @@ python3 transfer_learning_fire/compare_results.py
 
 # Output
 
-Model hasil training:
+Model Checkpoint
 
-```text
+Model hasil training disimpan dalam format .pth pada folder models/ ketika eksperimen dijalankan secara lokal:
+
 models/
 ├── mobilenet_best.pth
 ├── resnet18_best.pth
 └── resnet50_best.pth
-```
+
+File checkpoint .pth tidak disertakan dalam repository GitHub karena ukuran file model relatif besar. File tersebut digunakan untuk proses evaluasi lokal dan dapat dibuat kembali dengan menjalankan proses training.
+
+Untuk menghasilkan kembali checkpoint model:
+
+python3 transfer_learning_fire/train.py
+
+Setelah proses training selesai, checkpoint terbaik dari masing-masing model akan disimpan pada:
+
+transfer_learning_fire/models/
+
+Hasil evaluasi yang digunakan dalam eksperimen tetap disertakan di repository melalui folder results/, sedangkan grafik perbandingan tersedia pada folder graphs/.
+
+Hasil Evaluasi
 
 Hasil evaluasi:
 
-```text
 results/
 ├── mobilenet/
 ├── resnet18/
 ├── resnet50/
 ├── test_summary.json
 └── training_summary.json
-```
+Grafik
 
-Grafik:
+Grafik hasil eksperimen:
 
-```text
 graphs/
 ├── accuracy_comparison.png
 ├── fps_comparison.png
 ├── latency_comparison.png
 └── training_time_comparison.png
-```
-
 ---
 
 # Kesimpulan
