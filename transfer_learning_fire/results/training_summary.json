@@ -1,0 +1,17 @@
+[
+    {
+        "model": "resnet18",
+        "best_val_accuracy": 1.0,
+        "training_time_seconds": 26.297834634780884
+    },
+    {
+        "model": "resnet50",
+        "best_val_accuracy": 0.8,
+        "training_time_seconds": 66.0252616405487
+    },
+    {
+        "model": "mobilenet",
+        "best_val_accuracy": 1.0,
+        "training_time_seconds": 7.811765909194946
+    }
+]

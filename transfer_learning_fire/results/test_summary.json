@@ -1,0 +1,53 @@
+{
+    "resnet18": {
+        "test_accuracy": 1.0,
+        "correct": 4,
+        "total": 4,
+        "latency_ms": 39.90309754999544,
+        "fps": 25.060711107629647,
+        "confusion_matrix": [
+            [
+                2,
+                0
+            ],
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "resnet50": {
+        "test_accuracy": 0.75,
+        "correct": 3,
+        "total": 4,
+        "latency_ms": 111.11217519996899,
+        "fps": 8.99991380962794,
+        "confusion_matrix": [
+            [
+                2,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    "mobilenet": {
+        "test_accuracy": 0.75,
+        "correct": 3,
+        "total": 4,
+        "latency_ms": 9.115768950005076,
+        "fps": 109.70001603643576,
+        "confusion_matrix": [
+            [
+                2,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    }
+}
