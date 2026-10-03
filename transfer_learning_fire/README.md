@@ -489,46 +489,70 @@ python3 transfer_learning_fire/compare_results.py
 
 # Output
 
-Model Checkpoint
+## Model Checkpoint
 
-Model hasil training disimpan dalam format .pth pada folder models/ ketika eksperimen dijalankan secara lokal:
+Model hasil training disimpan dalam format `.pth` pada folder `models/` ketika eksperimen dijalankan secara lokal:
 
+```text
 models/
 ├── mobilenet_best.pth
 ├── resnet18_best.pth
 └── resnet50_best.pth
+```
 
-File checkpoint .pth tidak disertakan dalam repository GitHub karena ukuran file model relatif besar. File tersebut digunakan untuk proses evaluasi lokal dan dapat dibuat kembali dengan menjalankan proses training.
+File checkpoint `.pth` **tidak disertakan dalam repository GitHub** karena ukuran file model relatif besar. File tersebut digunakan untuk proses evaluasi lokal dan dapat dibuat kembali dengan menjalankan proses training.
 
 Untuk menghasilkan kembali checkpoint model:
 
+```bash
 python3 transfer_learning_fire/train.py
+```
 
 Setelah proses training selesai, checkpoint terbaik dari masing-masing model akan disimpan pada:
 
+```text
 transfer_learning_fire/models/
+```
 
-Hasil evaluasi yang digunakan dalam eksperimen tetap disertakan di repository melalui folder results/, sedangkan grafik perbandingan tersedia pada folder graphs/.
+Hasil evaluasi yang digunakan dalam eksperimen tetap disertakan di repository melalui folder `results/`, sedangkan grafik perbandingan tersedia pada folder `graphs/`.
 
-Hasil Evaluasi
+## Hasil Evaluasi
 
-Hasil evaluasi:
+Hasil evaluasi disimpan pada folder `results/`:
 
+```text
 results/
 ├── mobilenet/
+│   ├── accuracy.png
+│   ├── confusion_matrix.png
+│   ├── history.json
+│   └── loss.png
 ├── resnet18/
+│   ├── accuracy.png
+│   ├── confusion_matrix.png
+│   ├── history.json
+│   └── loss.png
 ├── resnet50/
+│   ├── accuracy.png
+│   ├── confusion_matrix.png
+│   ├── history.json
+│   └── loss.png
 ├── test_summary.json
 └── training_summary.json
-Grafik
+```
 
-Grafik hasil eksperimen:
+## Grafik
 
+Grafik hasil eksperimen disimpan pada folder `graphs/`:
+
+```text
 graphs/
 ├── accuracy_comparison.png
 ├── fps_comparison.png
 ├── latency_comparison.png
 └── training_time_comparison.png
+```
+
 ---
 
 # Kesimpulan
